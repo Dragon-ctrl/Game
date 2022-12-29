@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.light-mode {
+    background-color: #fafafa;
+    color: #333333;
+}
+
+.dark-mode {
+    background-color: #212121;
+    color: #fafafa;
+}
+
+.btn-mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #fafafa;
+    color: #333333;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.btn-mode:hover {
+    background-color: #e6e6e6;
+}
+
+.navbar {
+    padding: 1rem;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.score h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.score-value {
+    font-size: 2rem;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.player-choice img {
+    padding: 0.5rem;
+    width: 6rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.player-choice img:hover {
+    transform: scale(1.2);
+}
+
+.bot-choice img {
+    padding: 0.5rem;
+    width: 6rem;
+    opacity: 0.2;
+    animation: fadeInOut 2s linear infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.result {
+    margin-bottom: 1rem;
+}
+
+.result h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #4caf50;
+}
+
+.btn-reset {
+    padding: 0.5rem;
+    background-color: #fafafa;
+    color: #333333;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.btn-reset:hover {
+    background-color: #e6e6e6;
+}
