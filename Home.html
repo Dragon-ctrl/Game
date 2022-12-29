@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, sissors Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body class="light-mode">
+    <header>
+        <div class="navbar">
+            <h1>Rock, Paper, Sissors</h1>
+        </div>
+        <button class="btn-mode" onclick="toggleMode()">
+            <i class="material-icons light">brightness_2</i>
+            <i class="material-icons dark">brightness_7</i>
+        </button>
+    </header>
+    <main>
+        <section class="game">
+            <div class="score">
+                <div class="player">
+                    <h2>You</h2>
+                    <span class="score-value" id="player-score">0</span>
+                </div>
+                <div class="bot">
+                    <h2>Bot</h2>
+                    <span class="score-value" id="bot-score">0</span>
+                </div>
+            </div>
+            <div class="choices">
+                <div class="player-choice">
+                    <img src="rock.svg" alt="rock" onclick="playerPlay('rock')">
+                    <img src="paper.svg" alt="paper" onclick="playerPlay('paper')">
+                    <img src="sissors.svg" alt="sissors" onclick="playerPlay('sissors')">
+                </div>
+                <div class="bot-choice">
+                    <img src="rock.svg" alt="rock">
+                    <img src="paper.svg" alt="paper">
+                    <img src="sissors.svg" alt="sissors">
+                </div>
+            </div>
+            <div class="result">
+                <h2 id="result"></h2>
+            </div>
+            <div class="reset">
+                <button class="btn-reset" onclick="resetGame()">Reset</button>
+            </div>
+        </section>
+    </main>
+    <script src="Home.js"></script>
+</body>
+
+</html>
